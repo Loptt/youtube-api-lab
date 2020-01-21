@@ -2,6 +2,9 @@ let currentTerm = "";
 
 function fetchVideos(term, token = "") {
     let url = "";
+
+    // Token describes the necessary token to either get next page of results, or previous page
+    // If empty, the default behavior will bring the first page of results.
     if (token === "") {
         url = `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=${term}&key=AIzaSyDxk8D7UvK5M76vNg5n2p-t7hsxW5h7yBA`;
     } else {
@@ -43,6 +46,8 @@ function displayResults(responseJSON) {
 
     $('#buttons').html("");
 
+    // We embed the next and previous tokens in the value attr of the button so it can be
+    // retreived later to make the request.
     if (prevPageToken != null) {
         $('#buttons').append(
             `<button class="btn btn-primary" id="prevButton" value="${prevPageToken}">Previous</button>`
