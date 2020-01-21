@@ -1,4 +1,7 @@
-let currentTerm = "";
+// This variable lets us access the current searched term even when it is no longer
+// available in the form, so that we can retreive the next set of result using the buttons
+// and the nextPage and prevPage tokens 
+let currentTerm = ""; 
 
 function fetchVideos(term, token = "") {
     let url = "";
