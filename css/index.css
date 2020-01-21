@@ -1,0 +1,40 @@
+.video {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+.video a {
+    color: black;
+    text-decoration: none;
+}
+
+.thumbnail {
+    width: 400px;
+}
+
+.divider {
+    height: 2px;
+    background-color: #cccccc;
+}
+
+.btn-primary {
+    margin: 20px;
+}
+
+#buttons {
+    text-align: center;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+}
+
+form {
+    text-align: center;
+}
