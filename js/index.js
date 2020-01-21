@@ -38,12 +38,12 @@ function displayResults(responseJSON) {
     videos.forEach((video) => {
         $('#jsResult').append(`
             <div class="row video">
-                <div class="col-sm-6">
+                <div class="col-lg-6">
                     <a target="_blank" href="https://www.youtube.com/watch?v=${video.id.videoId}">
                         <img class="thumbnail" src="${video.snippet.thumbnails.high.url}">
                     </a>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-lg-6">
                     <a target="_blank" href="https://www.youtube.com/watch?v=${video.id.videoId}">
                         <h2>${video.snippet.title}</h2>
                     </a>
